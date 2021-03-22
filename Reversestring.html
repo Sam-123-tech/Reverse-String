@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reversing a String</title>
+    <style>
+         body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff0084;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #000000, #ff0084, #004e92, #000428, #BA8B02, #181818, #52c234, #061700, #870000, #190A05, #41295a, #000) ;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #000000, #ff0084, #004e92, #000428, #BA8B02, #181818, #52c234, #061700, #870000, #190A05, #41295a, #000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: rgb(0, 0, 0);
+height: 100vh;
+         }
+         h1{
+            padding: 20px;
+            font-size: 5em;
+            color: ghostwhite;
+         }
+    </style>
+</head>
+<body>
+       <h1> Reverse String Effect</h1>
+	<script type="text/javascript">
+		function reverseStr(str) {
+		    let newStr = "";
+		    for (let i = str.length - 1; i >= 0; i--) {
+		        newStr += str[i];
+		    }
+		    return newStr;
+		}
+		// Taking input from the user
+		const string = prompt('Enter a string: ');
+		const result = reverseStr(string);
+		// console.log(result);
+		window.alert("Reverse String is : "+result);
+	</script>
+</body>
+</html>
